@@ -2,7 +2,7 @@ mport http from 'http';
 import fs from 'fs';
 import path from 'path';
 
-const PORT = 5001;
+const PORT = 5002;
 
 const server = http.createServer((req, res) => {
     // 最初に開くファイルを「Pindex.html」に指定
