@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #0d0d0d; /* 黒 */
-    color: #c9a96a; /* 金 */
+    background-color: #F7F4EE; /* 生成り */
+    color: #333333; /* ダークグレー */
     line-height: 1.7;
 }
 
@@ -18,7 +18,7 @@ body {
 /* ===== ヘッダー ===== */
 header {
     background-color: #0f2a1f; /* 深緑 */
-    color: #e5e5e5; /* 白 */
+    color: #F5F5F5; /* オフホワイト */
     padding: 15px 0;
 }
 
@@ -67,7 +67,7 @@ nav a:hover {
 
 /* ===== 見出し ===== */
 h1, h2, h3 {
-    color: #ffd700; /* 少し明るい金 */
+    color: #C8A96A; /* 少しくすんだ金 */
     margin-bottom: 10px;
 }
 
@@ -104,8 +104,8 @@ section {
 
 /* ===== フッター ===== */
 footer {
-    background-color: #111111;
-    color: #aaaaaa;
+    background-color: #3A2F28;
+    color: #EDE6DD;
     text-align: center;
     padding: 20px;
     font-size: 14px;
