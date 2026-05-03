@@ -1,24 +1,25 @@
-/* style.css */
+/* ===== 基本設定 ===== */
 body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background-color: #F7F4EE; /* 生成り */
-    color: #333333; /* ダークグレー */
+    background-color: #F7F4EE;
+    color: #333333;
     line-height: 1.7;
 }
 
 /* ===== コンテナ（中央寄せ） ===== */
 .container {
     max-width: 1100px;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* ===== ヘッダー ===== */
 header {
-    background-color: #0f2a1f; /* 深緑 */
-    color: #F5F5F5; /* オフホワイト */
+    background-color: #0f2a1f;
+    color: #F5F5F5;
     padding: 15px 0;
 }
 
@@ -30,20 +31,20 @@ header .container {
 
 /* ロゴ */
 .logo {
-    margib: 0 40px;
+    margin: 0 40px;
 }
 
-.rogo a {
+.logo a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90px;
-    heigth: 90px;
+    height: 90px;
     border: 2px solid #c9a96a;
     border-radius: 50%;
-    color:c9a96a;
+    color: #c9a96a;
     text-decoration: none;
-    font-size: 2px;
+    font-size: 18px;
 }
 
 /* ナビ */
@@ -67,21 +68,20 @@ nav a:hover {
 
 /* ===== 見出し ===== */
 h1, h2, h3 {
-    color: #C8A96A; /* 少しくすんだ金 */
+    color: #C8A96A;
     margin-bottom: 10px;
 }
 
 /* ===== セクション ===== */
 section {
     margin: 60px 0;
-    
 }
 
 /* ===== ボタン ===== */
 .btn {
     display: inline-block;
-    background-color: #d4af37; /* 金 */
-    color: #000000; /* 黒文字 */
+    background-color: #d4af37;
+    color: #000000;
     padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
@@ -93,13 +93,19 @@ section {
     background-color: #ffd700;
 }
 
-/* ===== カード（サービスなど） ===== */
+/* ===== カード ===== */
 .card {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #d4af37;
     margin-bottom: 20px;
+}
+
+/* カード横並び（PC） */
+.cards {
+    display: flex;
+    gap: 20px;
 }
 
 /* ===== フッター ===== */
@@ -111,39 +117,7 @@ footer {
     font-size: 14px;
 }
 
-/* ===== レスポンシブ ===== */
-@media (max-width: 768px) {
-
-    header .container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-}
-
-.first .box p {
-    color: #111111;
-    line-height: 1.8;
-    font-size: 16px;
-}
-
-.first .box {
-    background: #FFFFFF;
-    padding: 20px;
-}
-
+/* SNS */
 .sns {
     margin-top: 10px;
 }
@@ -158,4 +132,62 @@ footer {
 
 .sns a:hover {
     opacity: 0.6;
+}
+
+/* 文章ボックス */
+.first .box {
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.first .box p {
+    color: #111111;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ===== 画像レスポンシブ ===== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== レスポンシブ ===== */
+@media (max-width: 768px) {
+
+    /* ヘッダー */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* ナビ */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* カード */
+    .cards {
+        flex-direction: column;
+    }
+
+    /* 文字サイズ */
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* 小さいスマホ */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 }
