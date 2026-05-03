@@ -143,3 +143,19 @@ footer {
     background: #FFFFFF;
     padding: 20px;
 }
+
+.sns {
+    margin-top: 10px;
+}
+
+.sns a {
+    color: #EDE6DD;
+    font-size: 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sns a:hover {
+    opacity: 0.6;
+}
