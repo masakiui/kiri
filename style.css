@@ -65,12 +65,12 @@ nav a:hover {
 }
 
 /* ===== 見出し ===== */
-h1, h2, h3 {
+h1, h2 {
     color: #C8A96A;
     margin-bottom: 10px;
     text-align: center;
 }
-h4 {
+h3 {
     color: #0D0D0D;
     margin-bottom: 10px;
     text-align: center;
